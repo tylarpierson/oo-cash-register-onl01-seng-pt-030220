@@ -16,7 +16,7 @@ class CashRegister
 
     @items<< item_info
 
-    @total += price * quantity
+    self.last_transaction += price * quantity
   end 
   def apply_discount 
     if @discount == 0
